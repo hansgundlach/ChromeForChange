@@ -3,8 +3,8 @@
 
   "manifest_version": 2,
 
-  "name": "Third Chrome Extension",
-  "description": "Makes technical reading easier",
+  "name": "ChromeForChange",
+  "description": "helps view government funding",
   "version": "1",
 
 

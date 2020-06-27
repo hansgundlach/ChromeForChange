@@ -7,7 +7,8 @@ jQuery(document).ready(function($) {
   'Eve' : '2',
   'Tom' : '3',
   'John' :'5',
-  'Hans' : '6'
+  'Hans' : '6',
+      'Gulf Island Fabrication':'10,000,000'
 
   }
 
@@ -43,9 +44,9 @@ $.each(acro, function(key, value) {
   console.log(key);
   console.log(value);
   $("p").highlight(key, {caseSensitive: false, className: 'yellowhigh', wordsOnly:true });
-    $('p').tooltipster({
+    /*$('p').tooltipster({
         content: $('<span><img src="my-image.png" /> <strong>This text is in bold case !</strong></span>')
-    });
+    });*/
 
   //see if this accepts tooltipster
   /*$('p').tooltipster({theme: 'tooltipster-noir'}).tooltipster('This is my message');
@@ -117,12 +118,12 @@ $.each(acro, function(key, value) {
 
 //this refers to the text that has just been highlighted
         var acro = {
-            'Adam' :'2',
-            'Eve' : '2',
-            'Tom' : '3',
-            'John' :'5',
-            'Hans' : '6'
-
+            'Adam': '2',
+            'Eve': '2',
+            'Tom': '3',
+            'John': '5',
+            'Hans': '6',
+            'Gulf Island Fabrication': '10,000,000'
         }
 
 
@@ -132,7 +133,7 @@ $.each(acro, function(key, value) {
     	var price = acro[currentKey];
     	console.log(currentKey)
 
-			Tipped.create(this, String(currentKey)+ " recieved " + String(price)+ " from the federal gov ");
+			Tipped.create(this, String(currentKey)+ " recieved " + String(price)+ " $ from the federal gov ");
 
 
 /*var data;
