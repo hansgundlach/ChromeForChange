@@ -1,0 +1,20 @@
+/*New Rendition*/
+
+@charset "UTF-8";
+
+
+@font-face {
+	font-family:idfdkasfdsfdsa;
+	src:url('chrome-extension://ifomhmgandipmpnelclcmbefppopfklc/HelveticaNeue-Light.otf');
+}
+
+
+
+
+
+
+.yellowhigh {
+	cursor:pointer ;
+	border-bottom:1px solid blue ;
+	background-color:#f2f24f;
+}

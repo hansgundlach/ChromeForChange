@@ -1,0 +1,45 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+
+  "name": "Third Chrome Extension",
+  "description": "Makes technical reading easier",
+  "version": "1",
+
+
+
+	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "css": ["styles.css", "tipped.css","tooltipster.bundle.min.css", "jquery.qtip.min.css"],
+      "js": ["jquery-1.9.1.js", "jquery-highlight1.js", "spinners.min.js", "tipped.js", "tooltipster.bundle.min.js", "jquery.qtip.min.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions":[
+    "activeTab",
+     "http://vimeo.com/api/oembed.json?url=http://vimeo.com/6428069&maxwidth=280&maxheight=280"
+
+  ],
+
+  "web_accessible_resources": [
+
+  ],
+  "background":{
+    "scripts":["background.js"]
+
+  },
+
+  "icons": {
+
+          "128": "icon.png" },
+
+	"browser_action": {
+
+
+  }
+
+}

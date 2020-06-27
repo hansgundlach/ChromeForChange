@@ -1,0 +1,27 @@
+<head>
+<link href="tipped.css" media="all" rel="stylesheet" type="text/css">
+</head>
+<body>
+<span id="json-vimeo">JSON - Vimeo</span>
+<script type="text/javascript">
+
+      $(document).ready(function() {
+        Tipped.create('#json-vimeo', {
+          ajax: {
+            url: 'http://vimeo.com/api/oembed.json?url=http://vimeo.com/6428069&maxwidth=280&maxheight=280',
+            success: function(data, textStatus, jqXHR) {
+              return {
+                title: data.title,
+                content: data.html
+              };
+            }
+          },
+          close: true,
+          hideOn: false,
+          skin: 'light',
+          radius: false,
+          position: 'topleft'
+        });
+      });
+    </script>
+	</body>
