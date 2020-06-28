@@ -1,16 +1,13 @@
 console.log("this is script.js");
 
 jQuery(document).ready(function($) {
+    var acro = {
+        'Gulf Island Fabrication': '10,000,000',
+        'Ashford Inc':'75,947,683',
+        'Provectus':'65,000',
+        'Strikeforce':'313,212'
+    }
 
-  var acro = {
-  'Adam' :'2',
-  'Eve' : '2',
-  'Tom' : '3',
-  'John' :'5',
-  'Hans' : '6',
-      'Gulf Island Fabrication':'10,000,000'
-
-  }
 
 
 
@@ -44,6 +41,7 @@ $.each(acro, function(key, value) {
   console.log(key);
   console.log(value);
   $("p").highlight(key, {caseSensitive: false, className: 'yellowhigh', wordsOnly:true });
+  $('div').highlight(key, {caseSensitive: false, className: 'yellowhigh', wordsOnly:true });
     /*$('p').tooltipster({
         content: $('<span><img src="my-image.png" /> <strong>This text is in bold case !</strong></span>')
     });*/
@@ -112,30 +110,31 @@ $.each(acro, function(key, value) {
 
     $('.yellowhigh').each(function() {
         console.log("this is in yellowhigh")
-        $('yellohigh').tooltipster({
+        /*$('yellowhigh').tooltipster({
             content: $('<span><img src="my-image.png" /> <strong>This text is in bold case !</strong></span>')
-        });
+        });*/
+        //$(this).tooltipster('This is my message');
 
 //this refers to the text that has just been highlighted
         var acro = {
-            'Adam': '2',
-            'Eve': '2',
-            'Tom': '3',
-            'John': '5',
-            'Hans': '6',
-            'Gulf Island Fabrication': '10,000,000'
+            'Gulf Island Fabrication': ['10,000,000',944],
+            'Ashford Inc':['75,947,683',0],
+            'Provectus':['65,500', 2],
+            'Strikeforce':['313,212',9]
         }
 
 
 
         //modifications for use on chrome extension
     	var currentKey = $(this).text();
-    	var price = acro[currentKey];
+    	var price = acro[currentKey][0];
+    	var employee = acro[currentKey][1];
     	console.log(currentKey)
 
-			Tipped.create(this, String(currentKey)+ " recieved " + String(price)+ " $ from the federal gov ");
+        Tipped.create(this, "  "+ String(currentKey)+ " recieved " + String(price)+ " $ from the federal gov and has "+
+        String(employee)+ " employees");
 
-
+             /*$('p').tooltipster({theme: 'tooltipster-noir'}).tooltipster('This is my message');*/
 /*var data;
 
 
