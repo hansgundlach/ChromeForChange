@@ -1,5 +1,5 @@
-# ChromeForChange
-ChromeForChange highlights government inequity in buisness COVID resources.
+# CovidAccountable
+ChromeAccountable highlights government inequity in buisness COVID funds.
 
 ## Installation
 
