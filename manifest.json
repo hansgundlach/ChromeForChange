@@ -3,8 +3,8 @@
 
   "manifest_version": 2,
 
-  "name": "ChromeForChange",
-  "description": "helps view government funding",
+  "name": "CovidAccountable",
+  "description": "CovidAccountable looks through a webpage and searches for company names that match that received PPP funding. Company names that have a hit in this database get highlighted where the user can learn about how much the company has reaped from the PPP.",
   "version": "1",
 
 

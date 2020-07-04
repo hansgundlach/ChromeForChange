@@ -33,9 +33,7 @@ jQuery(document).ready(function($) {
         //$('p').tooltipster({theme: 'tooltipster-noir'}).tooltipster('This is my message');
         //  $("p").prop("title","");
 
-
-
-
+        
         var currentKey = $(this).text();
         var price = buis[currentKey][0];
         var employee = buis[currentKey][1];
