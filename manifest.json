@@ -20,8 +20,8 @@
     }
   ],
   "permissions":[
-    "activeTab",
-     "http://vimeo.com/api/oembed.json?url=http://vimeo.com/6428069&maxwidth=280&maxheight=280"
+    "activeTab"
+
 
   ],
 

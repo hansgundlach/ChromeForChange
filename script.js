@@ -6,6 +6,10 @@ var buis = {
     'Strikeforce': ['313,212', 9]
 }
 
+//var buis = {"Amy":{"LOAN DATE":"[unspecified]","INDUSTRY":"Retail - Cosmetics","STATE":"CA","LOAN AMOUNT":"$9,999,995","EMPLOYEE COUNT":"561","MOST RECENT ANNUAL NET INCOME":"-$242,767,000","MOST RECENT BUYBACK $":"-","MOST RECENT DIVIDEND $":"-","MOST RECENT EXECUTIVE COMPENSATION":"$2,559,568","KEEPING THE MONEY?":"No","OTHER":"440 U.S. employees."}};
+
+
+
 jQuery(document).ready(function($) {
 
 //$.each searches through the page and highlights terms that are in the keys of acro
@@ -28,12 +32,22 @@ jQuery(document).ready(function($) {
 
         /*$('p').tooltipster({
        content: $('<span><img src="my-image.png" /> <strong>This text is in bold case !</strong></span>')
-   });*/
+         });*/
 
         //$('p').tooltipster({theme: 'tooltipster-noir'}).tooltipster('This is my message');
         //  $("p").prop("title","");
 
-        
+
+        //json reformat
+       /* var currentKey = $(this).text();
+        console.log(currentKey);
+        var price = obj[currentKey]["LOAN AMOUNT"];
+        console.log(price);
+        var employee = obj[currentKey]["EMPLOYEE COUNT"] ;*/
+
+
+
+        //old  dictionary formulation
         var currentKey = $(this).text();
         var price = buis[currentKey][0];
         var employee = buis[currentKey][1];
